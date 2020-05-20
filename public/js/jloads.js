@@ -69,7 +69,7 @@ script.onload = function () {
     })
     media.delay(10).target("#home-plugins");
     media.html([
-        "html/messages.html",
+        // "html/messages.html",
         "html/POST.html",
         "html/DELETE.html"
     ]);
