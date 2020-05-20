@@ -77,9 +77,9 @@ script.onload = function () {
 
     var images = new Load(document.body, success, error);
     // var images = new Load(document.body, success, error, loader);
+    images.target("#home-images");
 
-
-    images.target("#home-images").img([
-        "//github.com/faas-ovh/logo/blob/master/4/cover.png"
+    images.img([
+        "//logo.faas.ovh/4/cover.png"
     ]);
 }
