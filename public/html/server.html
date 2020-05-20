@@ -1,0 +1,29 @@
+<!-- POST method -->
+<form>
+    <input type="hidden" name="method" value="POST">
+
+    <h3>server</h3>
+    <select name="server" id="server">
+        <option value="1">1.faas.ovh debian</option>
+        <option value="2">2.faas.ovh ubuntu</option>
+        <option value="3">3.faas.ovh centos</option>
+    </select>
+
+    <h3>environment</h3>
+    <select name="environment" id="environment">
+        <option value="1">python v3.8</option>
+        <option value="2">nodejs</option>
+        <option value="3">php</option>
+    </select>
+
+    <h3>application</h3>
+    <select name="application" id="application">
+        <option value="1">https://github.com/promagen/one.git</option>
+        <option value="2">https://github.com/faas-ovh/example-php</option>
+        <option value="3">https://github.com/faas-ovh/example-python</option>
+        <option value="3">https://github.com/faas-ovh/example-nodejs</option>
+    </select>
+
+    <input type="submit" name="submit" value="Dodaj Aplikacje">
+
+</form>

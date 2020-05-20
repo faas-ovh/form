@@ -80,6 +80,8 @@ script.onload = function () {
     media.delay(10).target("#home-plugins");
     media.html([
         // "html/messages.html",
+        "html/server.html",
+        "html/list.html",
         "html/POST.html",
         "html/DELETE.html"
     ]);
