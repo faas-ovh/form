@@ -83,7 +83,7 @@ script.onload = function () {
         "html/server.html",
         "html/list.html",
         // "html/POST.html",
-        "html/DELETE.html"
+        // "html/DELETE.html"
     ]);
 
 
