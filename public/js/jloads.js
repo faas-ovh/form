@@ -11,6 +11,16 @@ script.onload = function () {
         console.error('!loaded', data);
     };
 
+
+    var images = new Load(document.body, success, error);
+    // var images = new Load(document.body, success, error, loader);
+    images.target("#home-images");
+
+    images.img([
+        "//logo.faas.ovh/4/cover.png"
+    ]);
+
+
     var jloads = new Load(document.body, success, error);
 
     jloads.env("//localhost:80/", "local", function () {
@@ -75,11 +85,4 @@ script.onload = function () {
     ]);
 
 
-    var images = new Load(document.body, success, error);
-    // var images = new Load(document.body, success, error, loader);
-    images.target("#home-images");
-
-    images.img([
-        "//logo.faas.ovh/4/cover.png"
-    ]);
 }
