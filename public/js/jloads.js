@@ -80,6 +80,6 @@ script.onload = function () {
 
 
     images.target("#home-images").img([
-        "//app.jloads.com/visitor/home/img/apiunit.png"
+        "//github.com/faas-ovh/logo/blob/master/4/cover.png"
     ]);
 }

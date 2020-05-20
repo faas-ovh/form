@@ -15,14 +15,21 @@ https://github.com/faas-ovh/form.git
 
 download using git command
 
-    git clone https://github.com/promagen/windows.git promagen-win
-    cd promagen-win
+    git clone https://github.com/faas-ovh/form.git form
+    cd form
 
 ## start working with FaaS Form
 
-    download.bat
-    install.bat
+### Production/test on linux
+
+    sh install.sh    
+    sh restart.sh
+    sh start.sh
+    sh stop.sh
     
+### test on Windows
+    
+    install.bat    
     restart.bat
 
 
