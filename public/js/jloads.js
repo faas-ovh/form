@@ -79,6 +79,16 @@ script.onload = function () {
     //     "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     // ]);
 
+    var fonts = new Load(document.body, success, error);
+    fonts.js([
+        "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+    ]);
+
+    var fonts2 = new Load(document.body, success, error);
+    fonts2.delay(100).js([
+        "/js/flowtype.js",
+        "/js/flowtype2.js",
+    ]);
 
     var media = new Load(document.body, success, error);
     media.env("//localhost:3001/", "local", function () {
