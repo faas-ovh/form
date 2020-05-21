@@ -15,9 +15,12 @@
             display: block; /* remove extra space below image */
         }
         body {
-            background-color: #cccccc;
-            color: white;
+            background-color: #fb7e14;
+            color: #fffc60;
             font-family: Tahoma;
+        }
+        h2, h3 {
+            font-size: medium;
         }
 
         /* MODULES  Size */
@@ -27,38 +30,48 @@
             width: 600px;
         }
         .jloads.content > div{
-            border: 1px solid black;
+            /*border: 1px solid black;*/
             /*height: 100px;*/
             margin: 0px;
             padding: 4px;
         }
+        #home-images {
+            padding: 0px;
+            height: 80px;
+            max-height: 80px;
+        }
         #home-plugins {
             height: 500px;
         }
-        #home-images {
-            height: 100px;
-            max-height: 100px;
-        }
-        .content .home-messages {
+        #faas-form {
             height: 250px;
+        }
+        #faas-table {
+            height: 250px;
+        }
+        #faas-message {
+            height: 150px;
             /*max-height: 100px;*/
             overflow: scroll;
         }
 
-        /* MODULES Colors */
+        /* MODULES Colors, Fonts */
         .jloads.content {
-            background-color: #aaaaaa;
+            background-color: #333333;
         }
         #home-plugins {
             background-color: #555555;
         }
 
         #home-images {
-            background-color: #777777;
+            background-color: #fb7e14;
         }
 
         .home-messages {
-            background-color: #333333;
+            /*background-color: #333333;*/
+            font-family: Consolas, "Courier New";
+            font-size: 10px;
+            color: white;
         }
     </style>
 
@@ -71,16 +84,16 @@
 <!--<link rel="import" href="/html/POST.html">-->
 <div class="jloads content">
     <div id="home-images"></div>
-    <div id="home-plugins"></div>
-    <div class="home-messages"></div>
+<!--    <div id="home-plugins"></div>-->
+    <div id="faas-form"></div>
+    <div id="faas-table"></div>
+    <div id="faas-message" class="home-messages"></div>
 </div>
 
 <div class="footer">
     <h3>local <a href="http://localhost:3001/" rel="nofollow">localhost:3001/</a></h3>
     <h3>live <a href="http://app.faas.ovh/" rel="nofollow">app.faas.ovh</a></h3>
 </div>
-
-
 
 </body>
 </html>

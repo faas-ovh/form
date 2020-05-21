@@ -61,7 +61,8 @@ script.onload = function () {
     app.cacheOff();
 
     app.js([
-        "js/form.js"
+        "js/form.js",
+        "js/faas-message.js"
     ]);
 
     // app.style([
@@ -77,13 +78,19 @@ script.onload = function () {
     media.env("//app.faas.ovh/", "production", function () {
         return window.location.hostname !== 'localhost';
     })
-    media.delay(10).target("#home-plugins");
-    media.html([
-        // "html/messages.html",
+    // media.target("#home-plugins");
+    // media.html([
+    //     // "html/messages.html",
+    //     "html/server.html",
+    //     "html/list.html",
+    //     // "html/POST.html",
+    //     // "html/DELETE.html"
+    // ]);
+    media.target("#faas-form").html([
         "html/server.html",
+    ]);
+    media.target("#faas-table").html([
         "html/list.html",
-        // "html/POST.html",
-        // "html/DELETE.html"
     ]);
 
 
