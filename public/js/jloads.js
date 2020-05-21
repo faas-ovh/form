@@ -64,10 +64,10 @@ script.onload = function () {
         "js/form.js"
     ]);
 
-    app.style([
-        "css/black.css",
-        "css/mobile.css"
-    ]);
+    // app.style([
+        // "css/black.css",
+        // "css/mobile.css"
+    // ]);
 
 
     var media = new Load(document.body, success, error);
