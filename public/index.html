@@ -8,14 +8,50 @@
 
     <script src="/js/jloads.js" type="text/javascript"></script>
     <style>
-        .home-messages {
-            background-color: #333333;
+        /* GLOBAL */
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            display: block; /* remove extra space below image */
         }
+        body {
+        }
+
+        /* MODULES  Size */
+        .jloads.content {
+            margin: auto auto;
+            width: 600px;
+        }
+        .jloads.content > div{
+            border: 1px solid black;
+            /*height: 100px;*/
+            margin: 0px;
+            padding: 4px;
+        }
+        #home-plugins {
+            height: 500px;
+        }
+        #home-images {
+            height: 100px;
+            max-height: 100px;
+        }
+        .content .home-messages {
+            height: 250px;
+            /*max-height: 100px;*/
+            overflow: scroll;
+        }
+
+        /* MODULES Colors */
         #home-plugins {
             background-color: #555555;
         }
+
         #home-images {
             background-color: #777777;
+        }
+
+        .home-messages {
+            background-color: #333333;
         }
     </style>
 
@@ -26,27 +62,17 @@
 
 <!--<link rel="import" href="/html/DELETE.html">-->
 <!--<link rel="import" href="/html/POST.html">-->
+<div class="jloads content">
+    <div id="home-images"></div>
+    <div id="home-plugins"></div>
+    <div class="home-messages"></div>
 
-<div id="home-images">
-    ...
+    <h3>local <a href="http://localhost:3001/" rel="nofollow">localhost:3001/</a></h3>
+    <h3>live <a href="http://app.faas.ovh/" rel="nofollow">app.faas.ovh</a></h3>
+
 </div>
 
 
-
-<div id="home-plugins">
-    ..
-</div>
-
-<hr/>
-
-<div class="home-messages">
-    .
-</div>
-
-<hr/>
-
-<h3>local  <a href="http://localhost:3001/" rel="nofollow">localhost:3001/</a></h3>
-<h3>live  <a href="http://app.faas.ovh/" rel="nofollow">app.faas.ovh</a></h3>
 
 </body>
 </html>
