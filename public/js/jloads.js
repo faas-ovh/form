@@ -109,7 +109,7 @@ script.onload = function () {
         "html/server.html",
     ]);
     media.target("#faas-table").html([
-        "html/server-list.html",
+        // "html/server-list.html",
         "html/app-list.html",
     ]);
 
