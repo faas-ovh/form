@@ -7,4 +7,3 @@ IF %ERRORLEVEL% NEQ 0 (
     ::node server.js
     forever start server.js
 )
-
